@@ -1,6 +1,7 @@
 /.vscode/
 /dist/
 /*.zip
+.DS_Store
 
 ### https://raw.github.com/github/gitignore//Node.gitignore
 
