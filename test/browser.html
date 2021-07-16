@@ -8,18 +8,20 @@
 	<script src="../node_modules/tweakpane/dist/tweakpane.js"></script>
 	<script src="../dist/tweakpane-image-plugin.js"></script>
 	<script>
+        // Blue pixel for testing
+        const img = new Image();
+        img.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==';
 		const params = {
-			prop: 3,
+			image: img
 		};
 		const pane = new Tweakpane.Pane();
 
 		pane.registerPlugin(TweakpaneImagePlugin);
 
-		// TODO: Update parameters for your plugin
-		pane.addInput(params, 'prop', {
-			view: 'dots',
+		pane.addInput(params, 'image', {
+			extensions: '.jpg, .png',
 		}).on('change', (ev) => {
-			console.log(ev.value);
+			console.log('le change', ev.value);
 		});
 
 		window.pane = pane;

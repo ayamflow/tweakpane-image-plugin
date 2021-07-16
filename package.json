@@ -1,9 +1,9 @@
 {
   "name": "tweakpane-image-plugin",
-  "version": "0.0.0",
-  "description": "Plugin template for Tweakpane",
+  "version": "1.0.0",
+  "description": "Image input plugin for Tweakpane",
   "main": "dist/tweakpane-image-plugin.js",
-  "author": "cocopon",
+  "author": "Florian Morel",
   "license": "MIT",
   "files": [
     "dist"
