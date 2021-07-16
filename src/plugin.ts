@@ -25,9 +25,9 @@ interface PluginInputParams extends BaseInputParams {
 // - converts `Ex` into `In` and holds it
 // - P is the type of the parsed parameters
 //
-export const TemplateInputPlugin: InputBindingPlugin<
 	number,
 	number,
+export const TweakpaneImagePlugin: InputBindingPlugin<
 	PluginInputParams
 > = {
 	id: 'input-template',

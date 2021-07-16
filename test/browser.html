@@ -6,15 +6,14 @@
 </head>
 <body>
 	<script src="../node_modules/tweakpane/dist/tweakpane.js"></script>
-	<script src="../dist/tweakpane-plugin-template.js"></script>
+	<script src="../dist/tweakpane-image-plugin.js"></script>
 	<script>
 		const params = {
 			prop: 3,
 		};
 		const pane = new Tweakpane.Pane();
 
-		// Register plugin
-		pane.registerPlugin(TweakpaneTemplatePlugin);
+		pane.registerPlugin(TweakpaneImagePlugin);
 
 		// TODO: Update parameters for your plugin
 		pane.addInput(params, 'prop', {

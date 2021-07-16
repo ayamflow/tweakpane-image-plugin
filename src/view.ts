@@ -7,7 +7,7 @@ interface Config {
 
 // Create a class name generator from the view name
 // ClassName('tmp') will generate a CSS class name like `tp-tmpv`
-const className = ClassName('tmp');
+const className = ClassName('img');
 
 // Custom view class should implement `View` interface
 export class PluginView implements View {

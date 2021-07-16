@@ -1,9 +1,7 @@
 // Import core styles
 @import '../../node_modules/@tweakpane/core/lib/sass/plugin';
 
-// Additional style for the plugin
-.#{$prefix}-tmpv {
-	// Extend a general input view style
+.#{$prefix}-imgv {
 	@extend %input;
 
 	cursor: pointer;
