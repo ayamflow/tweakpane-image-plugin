@@ -1,6 +1,6 @@
 {
   "name": "tweakpane-image-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Image input plugin for Tweakpane",
   "main": "dist/tweakpane-image-plugin.js",
   "author": "Florian Morel",

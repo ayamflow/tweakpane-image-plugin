@@ -38,6 +38,10 @@ export class PluginController implements Controller<PluginView> {
 		const file = files[0];
 		const image = document.createElement('img');
 		image.src = URL.createObjectURL(file);
-		this.value.rawValue = image;
+		const onLoad = () => {
+			image.removeEventListener('load', onLoad);
+			this.value.rawValue = image;
+		};
+		image.addEventListener('load', onLoad);
 	}
 }
